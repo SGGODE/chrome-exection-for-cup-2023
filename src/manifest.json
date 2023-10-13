@@ -1,0 +1,11 @@
+{
+    "name": "World Cup Update",
+    "version": "1.0.0",
+    "description": "World Cup Special Chrome Extension",
+    "manifest_version": 3,
+    "author": "Sanket Gode",
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "My Chrome Extension"
+    }
+}
