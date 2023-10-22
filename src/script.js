@@ -5,7 +5,7 @@ async function getMatchData() {
         const data = await response.json();
         const matchesList = data.data;
         if(!matchesList)return [];
-        const mappedData = matchesList.filter(match => match.series_id=="bd830e89-3420-4df5-854d-82cfab3e1e04").map(match => `${match.name}, ${match.status}`);
+        const mappedData = matchesList.map(match => `${match.name}, ${match.status}`);
         console.log({mappedData});
         document.getElementById("matches").innerHTML = mappedData.map(match => `<li>${match}</li>`).join('');
         return mappedData;
